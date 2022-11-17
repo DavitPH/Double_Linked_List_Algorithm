@@ -18,6 +18,7 @@ namespace Double_Linked_List_Algorithm
         public Node next;
         public Node prev;
     }
+
     class DoubleLinkedList
     {
         Node START;
@@ -63,6 +64,7 @@ namespace Double_Linked_List_Algorithm
                     return;
                 }
             }
+
             newnode.next = current;
             newnode.prev = previous;
 
@@ -74,8 +76,6 @@ namespace Double_Linked_List_Algorithm
             }
             current.prev = newnode;
             previous.next = newnode;
-
-
         }
 
         public bool Search(int rollNo, ref Node previous, ref Node current)
@@ -145,12 +145,18 @@ namespace Double_Linked_List_Algorithm
 
             }
         }
+        public bool listEmpty()
+        {
+            if (START == null)
+                return true;
+            else
+                return false;
+        }
 
-    }
-    class Program
-    {
         static void Main(string[] args)
         {
+            DoubleLinkedList obj = new DoubleLinkedList();
+            
         }
     }
 }
