@@ -18,7 +18,15 @@ namespace Double_Linked_List_Algorithm
         public Node next;
         public Node prev;
     }
-    class Program
+    class DoubleLinkedList
+    {
+        Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
+    }
+        class Program
     {
         static void Main(string[] args)
         {
